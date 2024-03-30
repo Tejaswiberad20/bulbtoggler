@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BulbToggler</title>
+    <style>
+        body{
+            background-image: radial-gradient( circle 369px at -2.9% 12.9%,  rgba(247,234,163,1) 0%, rgba(236,180,238,0.56) 46.4%, rgba(163,203,247,1) 100.7% );     
+        min-height: 100vh;
+       }
+        .box{
+            display: block;
+            margin: 50px auto;
+            border: none;
+            box-shadow: 0 0 3px 1px gray;
+            background-color: #fff;
+            height: 300px;
+            border-radius:10px ;
+            width: 300px;
+        }
+        .on{
+            display: block;
+            margin: 0px auto;
+            height: 250px;
+            width: 250px;
+            padding: 10px 20px;
+        }
+        .btn{
+            display: inline;
+            margin-left: 40%;
+            padding: 10px 20px ;
+            background-origin: none;
+            background-color: black;
+            color: azure;
+            font-size: 20px;
+            border-radius: 10px;
+            width: 140px;
+        }
+        .off{
+            padding: 10px 20px ;
+            background-origin: none;
+            background-color: black;
+            color: azure;
+            font-size: 20px;
+            border-radius: 10px;
+            width: 140px;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div class="box">
+        <img src="on.png"class="on"id="on">
+    </div>
+        <button type="button" class="btn"onclick="on()">On</button>
+        <button  type="button" class="off"onclick="off()">Off</button>
+        <script>
+            const BulbToggler=document.getElementById('on');
+            function on(){
+                BulbToggler.src="on.png";
+            
+            }
+            function off(){
+                BulbToggler.src="off.png ";
+    
+            }
+        </script>
+</body>
+</html>
